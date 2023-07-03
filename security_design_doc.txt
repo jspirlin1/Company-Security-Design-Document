@@ -44,3 +44,14 @@ What you’ll do: You’ll create a security infrastructure design document for 
     • Security and privacy policy recommendations
       
     • Intrusion detection or prevention for systems containing customer data 
+
+My Response:
+
+1. Authentication system
+One-Time Password generators will be used as a second factor in authentication, which will be managed centrally by an LDAP server.
+
+2. External Website Security
+Since the customer-facing website will be an e-commerce site allowing users to explore and buy items as well as create and log into accounts, it will be provided through HTTPS. Public access would be granted to this website.
+
+3. Internal Website Security
+The internal employee website, which requires authentication for access by workers, will also be delivered through HTTPS. Additionally, only authorized accounts and the company's internal network will be able to access it.
