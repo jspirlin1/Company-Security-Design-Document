@@ -1,3 +1,2 @@
-# Company-Security-Design-Document
-This is a security design document for a fictional company, courtesy of Google's IT Support Program
-under the course, IT Security and the Digital Dark Arts.
+# Google-IT-Support-Program
+These are my practice quizzes and assessments from Coursera and Google's IT Support Certificate Program.
