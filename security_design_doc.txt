@@ -55,3 +55,13 @@ Since the customer-facing website will be an e-commerce site allowing users to e
 
 3. Internal Website Security
 The internal employee website, which requires authentication for access by workers, will also be delivered through HTTPS. Additionally, only authorized accounts and the company's internal network will be able to access it.
+
+4. Remote access solution
+A network-level VPN solution, such as OpenVPN, will be required since engineers need remote access to internal websites as well as remote command-line access to workstations. A reverse proxy is advised in addition to a VPN to facilitate access to internal websites. Both of these would depend on the previously described LDAP server for authentication and authorization.
+
+5. Firewall and basic rule recommendations
+There would be a need for a network-based firewall appliance. It would have rules allowing traffic for different services, starting with an impact deny rule and eventually opening ports only when necessary. Additionally, rules will be required to authorize traffic to the VPN server, reverse proxy server, and internal website.
+
+6. 802.1X with EAP-TLS should be used for wireless security. Client certificates would be needed for this, which can also be used to authenticate other services like VPNs, reverse proxies, and internal website authentication. As the company expands, 802.1X is a better option than WPA2 since it is more secure and simpler to operate.
+
+
